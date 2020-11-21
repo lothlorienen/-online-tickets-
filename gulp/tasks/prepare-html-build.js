@@ -2,7 +2,7 @@ module.exports = () => {
   $.gulp.task('prepareHtmlBuild', () => {
     // Исходные данные
     const metaImages = $.fs.readdirSync(`${$.config.sourcePath}/${$.config.metaPath}`); // изображения
-    const templates = $.fs.readdirSync(`${$.config.sourcePath}/${$.config.hbsPath}/pages`).concat([`ui-toolkit.hbs`]); // шаблоны страниц
+    const templates = $.fs.readdirSync(`${$.config.sourcePath}/${$.config.hbsPath}/pages`); // шаблоны страниц
 
     const html = []; // Массив генерируемых элементов
     const pages = {}; // Объект, содержащий информацию о всех страницах
