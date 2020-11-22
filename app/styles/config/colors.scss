@@ -1,11 +1,17 @@
 :root {
   //Primary
-  --color-primary: var(--color-blue-70);
-  --color-primary-hover: var(--color-blue-80);
+  --color-primary: var(--color-gold);
+  --color-primary-hover: var(--color-gold-hover);
 
   // Blue
-  --color-blue-80: #0042FF;
-  --color-blue-70: #1B74FD;
+  //--color-blue-80: #0042FF;
+  //--color-blue-70: #1B74FD;
+  // Apex
+  --color-black: #2B2B3E;
+  --color-light: #F9F6F3;
+  --color-grey: #BAB8B5;
+  --color-gold: #CFA968;
+  --color-gold-hover: #F3CD8A;
 
   // Gray
   --color-gray-100: #363C4E;
@@ -18,8 +24,8 @@
   --color-gray-10: #F6F9FF;
 
   // Green
-  --color-green-100: #0BB578;
-
+  //--color-green-100: #0BB578;
+  //
   // Red
   --color-red-100: #ED143B;
 
@@ -47,12 +53,12 @@ $color-gray-20: var(--color-gray-20);
 $color-gray-10: var(--color-gray-10);
 
 // Blue
-$color-blue-80: var(--color-blue-80);
-$color-blue-70: var(--color-blue-70);
-
-// Green
-$color-green-100: var(--color-green-100);
-
+//$color-blue-80: var(--color-blue-80);
+//$color-blue-70: var(--color-blue-70);
+//
+//// Green
+//$color-green-100: var(--color-green-100);
+//
 // Red
 $color-red-100: var(--color-red-100);
 
@@ -63,13 +69,8 @@ $color-white-70: var(--color-white-70);
 $color-white-50: var(--color-white-50);
 $color-white-20: var(--color-white-20);
 $color-white-10: var(--color-white-10);
-$color-black: #000000;
-
-
-//Making a theme
-$color-var1: #532AD3;
-
-.theme-var1 {
-  --color-primary: #{$color-var1};
-  --color-primary-hover: #{darken($color-var1, 10)};
-}
+$color-black: var(--color-black);
+$color-light: var(--color-light);
+$color-gold: var(--color-gold);
+$color-gold-hover: var(--color-gold-hover);
+$color-grey: var(--color-grey);

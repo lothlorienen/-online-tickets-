@@ -71,3 +71,31 @@
     }
   }
 }
+
+.page-title {
+  display: block;
+  margin: 0;
+  font-family: "Book Antiqua", sans-serif;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.02em;
+}
+
+.primary-link {
+  color: $color-primary;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+
+  &:hover {
+    color: $color-primary-hover;
+  }
+
+  &--u {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,82 @@
+.home-content {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px 0 60px;
+  }
+
+  &__form {
+    padding-right: 90px;
+    border-right: 1px solid transparentize(black, 0.5);
+
+    .form {
+      margin-top: 37px;
+    }
+  }
+
+  &__info {
+    padding-top: 18px;
+    padding-left: 85px;
+
+    > * {
+      :first-child {
+        margin-top: 0;
+      }
+
+      :last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    h2 {
+      display: block;
+      margin: 0;
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+
+      + p {
+        margin-top: 42px;
+      }
+    }
+
+    p {
+      display: block;
+      margin: 62px 0 0;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      line-height: 21px;
+      color: #5A061F;
+    }
+
+    ul {
+      display: block;
+      max-width: 485px;
+      margin: 4px 0 0;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      line-height: 133%;
+      list-style-type: none;
+      counter-reset: li-counter;
+
+      li {
+        position: relative;
+        padding-left: 78px;
+      }
+
+      li::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: 'Зал № ' counter(li-counter) ' - ';
+        counter-increment: li-counter;
+        display: block;
+      }
+    }
+
+
+  }
+}

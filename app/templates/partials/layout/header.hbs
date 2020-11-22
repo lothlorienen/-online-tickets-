@@ -1,5 +1,26 @@
-<header class="header page__header">
-Header
+<header class="page__header header">
+  <div class="header__container">
+    <div class="header__brand">
+      <a href="#">{{>ui/svg name="rightBig"}} Онлайн касса</a>
+    </div>
+    <div class="header__links">
+      <nav class="header__nav">
+        <ul>
+          <li><a href="#" {{#ifCond page 'home'}}class="active"{{/ifCond}}>БИЛЕТЫ</a></li>
+          <li><a href="#" {{#ifCond page 'services'}}class="active"{{/ifCond}}>Услуги</a></li>
+          <li><a href="#" {{#ifCond page 'categories'}}class="active"{{/ifCond}}>Льготные категории</a></li>
+          <li><a href="#" {{#ifCond page 'rules'}}class="active"{{/ifCond}}>Правила посещения</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <ul>
+          <li>
+            <a href="#" title="Версия для слабовидящих." aria-label="Версия для слабовидящих.">{{>ui/svg name="eye"}}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </header>
 
 <main class="page__content">

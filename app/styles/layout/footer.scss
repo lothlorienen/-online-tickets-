@@ -1,3 +1,77 @@
 .footer {
+  color: $color-light;
+  background-color: $color-black;
 
+  &__container {
+    @extend .container;
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
+  &__info {
+    max-width: 285px;
+    font-size: 15px;
+    line-height: 20px;
+
+    > * + * {
+      margin-top: 20px;
+    }
+  }
+
+  &__info-item {
+    display: flex;
+
+    &--phone,
+    &--map {
+      align-items: center;
+    }
+
+    &--map {
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__map {
+    margin-left: auto;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    ul {
+      > * + * {
+        margin-top: 23px;
+      }
+    }
+
+    li {
+      text-align: right;
+    }
+  }
+
+  p {
+    display: block;
+    margin: 0;
+  }
+
+  small {
+    font-size: 13px;
+    font-weight: 300;
+  }
+
+  a {
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+    color: $color-primary;
+  }
 }

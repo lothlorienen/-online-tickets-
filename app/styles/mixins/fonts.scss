@@ -11,6 +11,14 @@
   }
 }
 
+@font-face {
+  font-family: 'Book Antiqua';
+  font-weight: 700;
+  font-style: normal;
+  src: url($fonts_dir + 'BookAntiqua-Bold.woff2') format('woff2');
+  font-display: swap;
+}
+
 @mixin font-mixin($font_name) {
   font-family: #{$font_name};
 }

@@ -1,7 +1,32 @@
 </main>
 
 <footer class="page__footer footer">
-Footer
+  <div class="footer__container">
+    <div class="footer__info">
+      <div class="footer__info-item footer__info-item--phone">
+        {{>ui/svg name="phone"}}
+        <p>Tел: <a href="tel:+73467330868">+7 (3467) 33-08-68</a></p>
+      </div>
+      <div class="footer__info-item">
+        {{>ui/svg name="time"}}
+        <p>Режим работы: <br>
+          с 11.00 - до 19.00 <br>
+          Выходной: понедельник-вторник <br>
+          <small>Последняя среда месяца - санитарный день</small></p>
+      </div>
+      <div class="footer__info-item footer__info-item--map">
+        {{>ui/svg name="map"}}
+        <p><a href="#">Схема расположения</a></p>
+      </div>
+    </div>
+    <div class="footer__map">
+      <ul>
+        <li><a href="#">Правила посещения</a></li>
+        <li><a href="#">Льготные категории</a></li>
+        <li><a href="#">Правила покупки и возврата</a></li>
+      </ul>
+    </div>
+  </div>
 </footer>
 
 </div>

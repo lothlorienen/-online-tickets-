@@ -1,0 +1,99 @@
+<section class="home-content">
+  <div class="container-md">
+    <div class="home-content__grid">
+      <div class="home-content__form">
+        <h1 class="page-title">Входной билет</h1>
+
+        <div class="home-form form">
+          <form>
+            <div class="form__item">
+              <p class="form__title">МУЗЕЙ:</p>
+            </div>
+            <div class="form__item">
+              <p class="form__title">ЗАЛЫ:</p>
+              <div class="home-form__columns">
+                <div class="home-form__checkboxes">
+                  {{>form/checkbox
+                      checked=1
+                      aria-label="1-й зал"
+                      label="1-й зал <b>50 руб</b>"
+                  }}
+                  {{>form/checkbox
+                      checked=1
+                      aria-label="2-й зал"
+                      label="2-й зал <b>50 руб</b>"
+                  }}
+                  {{>form/checkbox
+                      checked=1
+                      aria-label="3-й зал"
+                      label="3-й зал <b>50 руб</b>"
+                  }}
+                  {{>form/checkbox
+                      checked=1
+                      aria-label="4-й зал"
+                      label="4-й зал <b>50 руб</b>"
+                  }}
+                </div>
+              </div>
+            </div>
+            <div class="form__item">
+              <p class="form__title">ТИП БИЛЕТА:</p>
+
+              <p><a class="primary-link primary-link--u" href="#">Подробнее о льготных категориях</a></p>
+            </div>
+            <div class="form__item">
+              <p class="form__title">КОЛИЧЕСТВО:</p>
+            </div>
+            <div class="form__item">
+              <p class="form__title">E-MAIL:</p>
+              {{>form/input
+                  type="email"
+                  field-name="form-email"
+                  placeholder="не указано"
+                  inputmode="email"
+                  aria-label="Введите ваш почтовый адрес."
+                  message="После оплаты билет будет доступен для скачивания и печати, так же будет отправлен на указанный e-mail."
+              }}
+            </div>
+            <div class="form__item">
+              <p class="form__title">ВЫБРАНО:</p>
+              <div class="form__summary">
+                <p class="form__summary-name">Музей: <span></span></p>
+                <p class="form__summary-hall">Залы: <span>1-й зал, 2-й зал, 3-й зал</span></p>
+                <p class="form__summary-type">Тип билета: <span>Стандартный</span></p>
+                <p class="form__summary-amount">Количество: <span>1 шт</span></p>
+                <p class="form__summary-email">E-mail: <span></span></p>
+              </div>
+            </div>
+            <div class="form__item">
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="home-content__info">
+        <h2>Информация о залах:</h2>
+        <p>Государственный художественный музей</p>
+        <ul>
+          <li>Постоянная экспозиция «Русское искусство XVIII&nbsp;-&nbsp;XX&nbsp;веков»</li>
+          <li>Постоянная экспозиция «Иконопись XV-XIX веков»</li>
+          <li>Зал временных выставок №1 «Оливковый зал»</li>
+          <li>Зал временных выставок №2 «Серый зал»</li>
+        </ul>
+        <p>Галерея-мастерская художника Г.С.Райшева</p>
+        <ul>
+          <li>Постоянная экспозиция «Человек. Природа. Космос.»</li>
+          <li>Зал временных выставок. Конференц-зал</li>
+          <li>Постоянная экспозиция «Геннадий Райшев. Ранняя живопись: прошлое, обращенное в будущее.»</li>
+          <li>Постоянная экспозиция «Геннадий Райшев. Графика: поиски и эксперименты. 1960-е – 80-е годы»</li>
+        </ul>
+        <p>Дом-музей народного художника СССР В.А.Игошева</p>
+        <ul>
+          <li>Зал временных выставок «Творческая мастерская «У камина»</li>
+          <li>Постоянная экспозиция «Северный путь»</li>
+          <li>Постоянная экспозиция «Мастерская художника»</li>
+          <li>Зал временных выставок «Музейная гостиная»</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
