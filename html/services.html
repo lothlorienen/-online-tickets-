@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Главная</title>
+  <title>Дополнительные услуги</title>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/main.css?v=2352">
 </head>
@@ -27,8 +27,8 @@
     <div class="header__links">
       <nav class="header__nav">
         <ul>
-          <li><a href="./home.html" class="active">БИЛЕТЫ</a></li>
-          <li><a href="./services.html">Услуги</a></li>
+          <li><a href="./home.html">БИЛЕТЫ</a></li>
+          <li><a href="./services.html" class="active">Услуги</a></li>
           <li><a href="./categories.html">Льготные категории</a></li>
           <li><a href="./rules.html">Правила посещения</a></li>
         </ul>
@@ -53,68 +53,24 @@
   <div class="container-md">
     <div class="tickets-content__grid">
       <div class="tickets-content__form">
-        <h1 class="page-title">Входной билет</h1>
+        <h1 class="page-title">Дополнительные услуги</h1>
 
         <div class="tickets-form form">
           <form>
             <div class="form__item">
-              <p class="form__title">МУЗЕЙ:</p>
+              <p class="form__title">Услуга:</p>
 
               <div class="form-select">
-                <select class="js-select visually-hidden" name="tickets-form-museums" data-placeholder="не выбрано">
-                  <option value="Государственный художественный музей">Государственный художественный музей</option>
-                  <option value="Галерея-мастерская художника Г.С.Райшева">Галерея-мастерская художника Г.С.Райшева</option>
-                  <option value="Дом-музей народного художника СССР В.А.Игошева">Дом-музей народного художника СССР В.А.Игошева</option>
+                <select class="js-select visually-hidden" name="tickets-form-services" data-placeholder="не выбрано">
+                  <option value="Входной билет - 200 р. (4 зала по 50 р.)">Входной билет - 200 р. (4 зала по 50 р.)</option>
+                  <option value="Экскурсионное обслуживание - 250 р.">Экскурсионное обслуживание - 250 р.</option>
+                  <option value="Культурно-образовательное мероприятие 'Музейное занятие для организованных групп детей' - 50 р.">Культурно-образовательное мероприятие "Музейное занятие для организованных групп детей" - 50 р.</option>
+                  <option value="Культурно-образовательное мероприятие «Творческий мастер-класс» - 300 р.">Культурно-образовательное мероприятие «Творческий мастер-класс» - 300 р.</option>
+                  <option value="Культурно-образовательное мероприятие «Художественный мастер-класс» - 300 р.">Культурно-образовательное мероприятие «Художественный мастер-класс» - 300 р.</option>
+                  <option value="Культурно-образовательное мероприятие «Мастер-класс «Тематический No1» - 150 р.">Культурно-образовательное мероприятие «Мастер-класс «Тематический No1» - 150 р.</option>
+                  <option value="Культурно-образовательное мероприятие «Мастер-класс «Тематический No2» - 100 р.">Культурно-образовательное мероприятие «Мастер-класс «Тематический No2» - 100 р.</option>
                 </select>
               </div>
-            </div>
-            <div class="form__item">
-              <p class="form__title">ЗАЛЫ:</p>
-              <div class="tickets-form__checkboxes">
-                <div class="tickets-form__checkboxes-columns">
-                  <div class="tickets-form__checkboxes-list">
-                    <div class="form-checkbox">
-                      <label class="form-checkbox__label">
-                        <input type="checkbox" class="form-checkbox__input" checked aria-label="1-й зал">
-                        <span class="form-checkbox__icon"></span>
-                        <p class="form-checkbox__label-text">1-й зал <b>50 руб</b></p>
-                      </label>
-                    </div>
-                    <div class="form-checkbox">
-                      <label class="form-checkbox__label">
-                        <input type="checkbox" class="form-checkbox__input" checked aria-label="2-й зал">
-                        <span class="form-checkbox__icon"></span>
-                        <p class="form-checkbox__label-text">2-й зал <b>50 руб</b></p>
-                      </label>
-                    </div>
-                    <div class="form-checkbox">
-                      <label class="form-checkbox__label">
-                        <input type="checkbox" class="form-checkbox__input" checked aria-label="3-й зал">
-                        <span class="form-checkbox__icon"></span>
-                        <p class="form-checkbox__label-text">3-й зал <b>50 руб</b></p>
-                      </label>
-                    </div>
-                    <div class="form-checkbox">
-                      <label class="form-checkbox__label">
-                        <input type="checkbox" class="form-checkbox__input" checked aria-label="4-й зал">
-                        <span class="form-checkbox__icon"></span>
-                        <p class="form-checkbox__label-text">4-й зал <b>50 руб</b></p>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="form__item">
-              <p class="form__title">ТИП БИЛЕТА:</p>
-              <div class="form-select">
-                <select class="js-select visually-hidden" name="tickets-form-museums" data-placeholder="не выбрано">
-                  <option value="стандартный" selected="selected">стандартный</option>
-                  <option value="льгота 50 %">льгота 50 %</option>
-                  <option value="льгота 100 %">льгота 100 %</option>
-                </select>
-              </div>
-              <p><a class="primary-link primary-link--u" href="#">Подробнее о льготных категориях</a></p>
             </div>
             <div class="form__item">
               <p class="form__title">КОЛИЧЕСТВО:</p>
@@ -142,13 +98,7 @@
             </div>
             <div class="form__item">
               <div class="tickets-form__total">
-                <div class="tickets-form__total-amount">200 руб</div>
-                <div class="tickets-form__total-submit">
-                    <button type="submit" class="btn">оформить</button>
-                </div>
-              </div>
-              <div class="tickets-form__total">
-                <div class="tickets-form__total-amount">200 руб</div>
+                <div class="tickets-form__total-amount">0 руб</div>
                 <div class="tickets-form__total-submit">
                     <button type="submit" class="btn" disabled aria-disabled="true">оформить</button>
                   <p class="tickets-form__total-message">Не выбран музей</p>
@@ -159,27 +109,16 @@
         </div>
       </div>
       <div class="tickets-content__info">
-        <h2>Информация о залах:</h2>
-        <p>Государственный художественный музей</p>
-        <ul class="halls-list">
-          <li>Постоянная экспозиция «Русское искусство XVIII&nbsp;-&nbsp;XX&nbsp;веков»</li>
-          <li>Постоянная экспозиция «Иконопись XV-XIX веков»</li>
-          <li>Зал временных выставок №1 «Оливковый зал»</li>
-          <li>Зал временных выставок №2 «Серый зал»</li>
-        </ul>
-        <p>Галерея-мастерская художника Г.С.Райшева</p>
-        <ul class="halls-list">
-          <li>Постоянная экспозиция «Человек. Природа. Космос.»</li>
-          <li>Зал временных выставок. Конференц-зал</li>
-          <li>Постоянная экспозиция «Геннадий Райшев. Ранняя живопись: прошлое, обращенное в будущее.»</li>
-          <li>Постоянная экспозиция «Геннадий Райшев. Графика: поиски и эксперименты. 1960-е – 80-е годы»</li>
-        </ul>
-        <p>Дом-музей народного художника СССР В.А.Игошева</p>
-        <ul class="halls-list">
-          <li>Зал временных выставок «Творческая мастерская «У камина»</li>
-          <li>Постоянная экспозиция «Северный путь»</li>
-          <li>Постоянная экспозиция «Мастерская художника»</li>
-          <li>Зал временных выставок «Музейная гостиная»</li>
+        <h2>Информация об услугах:</h2>
+        <p>Эти услуги вы сможете заказать только после устной консультации со специалистом по
+          телефону 8 3467 33-08-68:</p>
+        <ul>
+          <li>Экскурсионное обслуживание - 250 р.</li>
+          <li>Культурно-образовательное мероприятие "Музейное занятие для организованных групп детей" - 50 р.</li>
+          <li>Культурно-образовательное мероприятие «Творческий мастер-класс» - 300 р.</li>
+          <li>Культурно-образовательное мероприятие «Художественный мастер-класс» - 300 р.</li>
+          <li>Культурно-образовательное мероприятие «Мастер-класс «Тематический No1» - 150 р.</li>
+          <li>Культурно-образовательное мероприятие «Мастер-класс «Тематический No2» - 100 р.</li>
         </ul>
       </div>
     </div>
