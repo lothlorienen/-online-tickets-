@@ -23,11 +23,7 @@
             </div>
             <div class="form__item">
               <p class="form__title">КОЛИЧЕСТВО:</p>
-              <div class="form-counter js-form-counter">
-                <button class="form-counter__btn js-form-counter__minus" type="button" aria-label="Убрать билет." disabled></button>
-                <input class="form-counter__input js-form-counter__input" type="number" min="1" max="1000" inputmode="numeric" aria-label="Введите необходимое количество билетов." value="1">
-                <button class="form-counter__btn js-form-counter__plus" type="button" aria-label="Добавить билет."></button>
-              </div>
+              {{>form/counter}}
             </div>
             <div class="form__item">
               <p class="form__title">E-MAIL:</p>

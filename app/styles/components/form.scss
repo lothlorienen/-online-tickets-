@@ -208,7 +208,8 @@
   $checkbox-value: 18px;
   --checkbox-value: #{$checkbox-value};
   justify-content: flex-start;
-  
+
+  &__input,
   &__label {
     cursor: pointer;
   }
@@ -296,58 +297,45 @@
       cursor: not-allowed;
     }
 
-
-
-    //&:focus {
-    //  outline: 1px solid $color-primary-hover;
-    //}
-
     &:first-child {
       &::before {
-        position: absolute;
-        top: 50%;
-        left: 50%;
         content: '';
         display: block;
-        width: 11px;
-        height: 1px;
-        background-color: currentColor;
-        transform: translate(-50%, -50%);
+        @include sprite('minus');
       }
 
       &:not(:disabled):hover {
         &::before {
-          height: 2.5px;
+          @include sprite('minus-h');
         }
+      }
+
+
+      &:disabled::before {
+        @include sprite('minus-d');
       }
     }
 
     &:last-child {
-      &::after,
+      //&::after,
       &::before {
-        position: absolute;
-        top: 50%;
-        left: 50%;
         content: '';
         display: block;
-        width: 11px;
-        height: 1px;
-        background-color: currentColor;
-        transform: translate(-50%, -50%);
+        @include sprite('plus');
       }
 
       &:hover {
         &::before {
-          height: 2.5px;
+          @include sprite('plus-h');
         }
-        &::after {
-          height: 1.5px;
-        }
+        //&::after {
+        //  height: 1.5px;
+        //}
       }
 
-      &::after {
-        transform: translate(-50%, -50%) rotate(90deg);
-      }
+      //&::after {
+      //  transform: translate(-50%, -50%) rotate(90deg);
+      //}
     }
   }
 
@@ -425,7 +413,6 @@
   border-radius: unset;
 }
 
-
 .select2-results__option {
   padding: 14px 43px 14px 13px;
   font-size: 14px;
@@ -445,5 +432,3 @@
   background-color: #F9F6F3 !important;
   color: initial !important;
 }
-
-

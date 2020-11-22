@@ -19,7 +19,8 @@ class FormCounter extends Widget {
     this.$node.addEventListener('click', e => {
       let target = e.target;
 
-      if (target === this.$buttonMinus) {
+      if (target === this.$buttonMinus || target.closest('.js-form-counter__minus')) {
+        if (this.value <= 1) return;
         this.value = this.$input.value;
         this.value = Number(this.value) - 1;
         this.$input.value = this.value;
@@ -31,7 +32,7 @@ class FormCounter extends Widget {
         }
       }
 
-      if (target === this.$buttonPlus) {
+      if (target === this.$buttonPlus || target.closest('.js-form-counter__plus')) {
         this.value = this.$input.value;
         this.value = Number(this.value) + 1;
         this.$input.value = this.value;

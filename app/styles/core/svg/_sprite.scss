@@ -1,5 +1,10 @@
-$icons: (sprite: (width: 54px, height: 46px, pngPath: '../assets/images/sprite.png', svgPath: '../assets/images/sprite.svg'),
+$icons: (sprite: (width: 119px, height: 81px, pngPath: '../assets/images/sprite.png', svgPath: '../assets/images/sprite.svg'),
 check: (width: 14px, height: 12px, backgroundX: 0px, backgroundY: 0px),
 down: (width: 14px, height: 8px, backgroundX: -14px, backgroundY: -12px),
-popup-close: (width: 26px, height: 26px, backgroundX: -28px, backgroundY: -20px),
+minus: (width: 13px, height: 3px, backgroundX: -28px, backgroundY: -20px),
+minus-d: (width: 13px, height: 3px, backgroundX: -41px, backgroundY: -23px),
+minus-h: (width: 13px, height: 3px, backgroundX: -54px, backgroundY: -26px),
+plus: (width: 13px, height: 13px, backgroundX: -67px, backgroundY: -29px),
+plus-h: (width: 13px, height: 13px, backgroundX: -80px, backgroundY: -42px),
+popup-close: (width: 26px, height: 26px, backgroundX: -93px, backgroundY: -55px),
 );
