@@ -1,0 +1,80 @@
+<section class="tickets-content">
+  <div class="container-md">
+    <div class="tickets-content__grid">
+      <div class="tickets-content__form">
+        <h1 class="page-title">Дополнительные услуги</h1>
+
+        <div class="tickets-form form">
+          <form>
+            <div class="form__item">
+              <p class="form__title">Услуга:</p>
+
+              <div class="form-select">
+                <select class="js-select visually-hidden" name="tickets-form-services" data-placeholder="не выбрано">
+                  <option value="Входной билет - 200 р. (4 зала по 50 р.)">Входной билет - 200 р. (4 зала по 50 р.)</option>
+                  <option value="Экскурсионное обслуживание - 250 р.">Экскурсионное обслуживание - 250 р.</option>
+                  <option value="Культурно-образовательное мероприятие 'Музейное занятие для организованных групп детей' - 50 р.">Культурно-образовательное мероприятие "Музейное занятие для организованных групп детей" - 50 р.</option>
+                  <option value="Культурно-образовательное мероприятие «Творческий мастер-класс» - 300 р.">Культурно-образовательное мероприятие «Творческий мастер-класс» - 300 р.</option>
+                  <option value="Культурно-образовательное мероприятие «Художественный мастер-класс» - 300 р.">Культурно-образовательное мероприятие «Художественный мастер-класс» - 300 р.</option>
+                  <option value="Культурно-образовательное мероприятие «Мастер-класс «Тематический No1» - 150 р.">Культурно-образовательное мероприятие «Мастер-класс «Тематический No1» - 150 р.</option>
+                  <option value="Культурно-образовательное мероприятие «Мастер-класс «Тематический No2» - 100 р.">Культурно-образовательное мероприятие «Мастер-класс «Тематический No2» - 100 р.</option>
+                </select>
+              </div>
+            </div>
+            <div class="form__item">
+              <p class="form__title">КОЛИЧЕСТВО:</p>
+              <div class="form-counter js-form-counter">
+                <button class="form-counter__btn js-form-counter__minus" type="button" aria-label="Убрать билет." disabled></button>
+                <input class="form-counter__input js-form-counter__input" type="number" min="1" max="1000" inputmode="numeric" aria-label="Введите необходимое количество билетов." value="1">
+                <button class="form-counter__btn js-form-counter__plus" type="button" aria-label="Добавить билет."></button>
+              </div>
+            </div>
+            <div class="form__item">
+              <p class="form__title">E-MAIL:</p>
+              {{>form/input
+                  type="email"
+                  field-name="form-email"
+                  placeholder="не указано"
+                  inputmode="email"
+                  aria-label="Введите ваш почтовый адрес."
+                  message="После оплаты билет будет доступен для скачивания и печати, так же будет отправлен на указанный e-mail."
+              }}
+            </div>
+            <div class="form__item">
+              <p class="form__title">ВЫБРАНО:</p>
+              <div class="form__summary">
+                <p class="form__summary-name">Музей: <span></span></p>
+                <p class="form__summary-hall">Залы: <span>1-й зал, 2-й зал, 3-й зал</span></p>
+                <p class="form__summary-type">Тип билета: <span>Стандартный</span></p>
+                <p class="form__summary-amount">Количество: <span>1 шт</span></p>
+                <p class="form__summary-email">E-mail: <span></span></p>
+              </div>
+            </div>
+            <div class="form__item">
+              <div class="tickets-form__total">
+                <div class="tickets-form__total-amount">0 руб</div>
+                <div class="tickets-form__total-submit">
+                  {{>ui/btn button=1 label="оформить" disabled=1 type="submit"}}
+                  <p class="tickets-form__total-message">Не выбран музей</p>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="tickets-content__info">
+        <h2>Информация об услугах:</h2>
+        <p>Эти услуги вы сможете заказать только после устной консультации со специалистом по
+          телефону 8 3467 33-08-68:</p>
+        <ul>
+          <li>Экскурсионное обслуживание - 250 р.</li>
+          <li>Культурно-образовательное мероприятие "Музейное занятие для организованных групп детей" - 50 р.</li>
+          <li>Культурно-образовательное мероприятие «Творческий мастер-класс» - 300 р.</li>
+          <li>Культурно-образовательное мероприятие «Художественный мастер-класс» - 300 р.</li>
+          <li>Культурно-образовательное мероприятие «Мастер-класс «Тематический No1» - 150 р.</li>
+          <li>Культурно-образовательное мероприятие «Мастер-класс «Тематический No2» - 100 р.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

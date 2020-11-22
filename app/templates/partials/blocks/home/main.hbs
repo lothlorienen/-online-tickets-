@@ -1,16 +1,16 @@
-<section class="home-content">
+<section class="tickets-content">
   <div class="container-md">
-    <div class="home-content__grid">
-      <div class="home-content__form">
+    <div class="tickets-content__grid">
+      <div class="tickets-content__form">
         <h1 class="page-title">Входной билет</h1>
 
-        <div class="home-form form">
+        <div class="tickets-form form">
           <form>
             <div class="form__item">
               <p class="form__title">МУЗЕЙ:</p>
 
               <div class="form-select">
-                <select class="js-select visually-hidden" name="home-form-museums" data-placeholder="не выбрано">
+                <select class="js-select visually-hidden" name="tickets-form-museums" data-placeholder="не выбрано">
                   <option value="Государственный художественный музей">Государственный художественный музей</option>
                   <option value="Галерея-мастерская художника Г.С.Райшева">Галерея-мастерская художника Г.С.Райшева</option>
                   <option value="Дом-музей народного художника СССР В.А.Игошева">Дом-музей народного художника СССР В.А.Игошева</option>
@@ -19,9 +19,9 @@
             </div>
             <div class="form__item">
               <p class="form__title">ЗАЛЫ:</p>
-              <div class="home-form__checkboxes">
-                <div class="home-form__checkboxes-columns">
-                  <div class="home-form__checkboxes-list">
+              <div class="tickets-form__checkboxes">
+                <div class="tickets-form__checkboxes-columns">
+                  <div class="tickets-form__checkboxes-list">
                     {{>form/checkbox
                         checked=1
                         aria-label="1-й зал"
@@ -49,7 +49,7 @@
             <div class="form__item">
               <p class="form__title">ТИП БИЛЕТА:</p>
               <div class="form-select">
-                <select class="js-select visually-hidden" name="home-form-museums" data-placeholder="не выбрано">
+                <select class="js-select visually-hidden" name="tickets-form-museums" data-placeholder="не выбрано">
                   <option value="стандартный" selected="selected">стандартный</option>
                   <option value="льгота 50 %">льгота 50 %</option>
                   <option value="льгота 100 %">льгота 100 %</option>
@@ -87,24 +87,24 @@
               </div>
             </div>
             <div class="form__item">
-              <div class="home-form__total">
-                <div class="home-form__total-amount">200 руб</div>
-                <div class="home-form__total-submit">
+              <div class="tickets-form__total">
+                <div class="tickets-form__total-amount">200 руб</div>
+                <div class="tickets-form__total-submit">
                   {{>ui/btn button=1 label="оформить" type="submit"}}
                 </div>
               </div>
-              <div class="home-form__total">
-                <div class="home-form__total-amount">200 руб</div>
-                <div class="home-form__total-submit">
+              <div class="tickets-form__total">
+                <div class="tickets-form__total-amount">200 руб</div>
+                <div class="tickets-form__total-submit">
                   {{>ui/btn button=1 label="оформить" disabled=1 type="submit"}}
-                  <p class="home-form__total-message">Не выбран музей</p>
+                  <p class="tickets-form__total-message">Не выбран музей</p>
                 </div>
               </div>
             </div>
           </form>
         </div>
       </div>
-      <div class="home-content__info">
+      <div class="tickets-content__info">
         <h2>Информация о залах:</h2>
         <p>Государственный художественный музей</p>
         <ul class="halls-list">

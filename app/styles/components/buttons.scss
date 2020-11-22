@@ -15,8 +15,7 @@
   cursor: pointer;
   @include transition;
 
-  &:hover,
-  &--hover {
+  &:hover {
     color: $color-primary-hover;
   }
 
@@ -24,40 +23,38 @@
     color: $color-black;
   }
 
-  &--focus {
-    outline: 1px solid $color-primary-hover;
-  }
+  //&--focus {
+  //  outline: 1px solid $color-primary-hover;
+  //}
 
   &:disabled,
   &--disabled {
     color: $color-grey;
-    cursor: not-allowed;
-    //pointer-events: none;
-    //appearance: none;
+    pointer-events: none;
   }
 
   // Sizes
-  &--small {
-    @include btn-small;
-  }
-
-  &--large {
-    @include btn-large;
-  }
-
-  &--w100 {
-    width: 100%;
-  }
-
-  // Primary
-  &--primary {
-    color: $color-white;
-    background-color: $color-primary;
-    border: 1px solid $color-primary;
-
-    &:hover {
-      color: $color-primary;
-      background-color: $color-white;
-    }
-  }
+  //&--small {
+  //  @include btn-small;
+  //}
+  //
+  //&--large {
+  //  @include btn-large;
+  //}
+  //
+  //&--w100 {
+  //  width: 100%;
+  //}
+  //
+  //// Primary
+  //&--primary {
+  //  color: $color-white;
+  //  background-color: $color-primary;
+  //  border: 1px solid $color-primary;
+  //
+  //  &:hover {
+  //    color: $color-primary;
+  //    background-color: $color-white;
+  //  }
+  //}
 }

@@ -375,26 +375,26 @@
   .select2-selection--single {
     display: flex;
     align-items: center;
-    height: 45px;
+    min-height: 45px;
+    height: auto!important;
     border: 1px solid $color-black;
     border-radius: unset;
   }
 
   .select2-selection__rendered {
     width: 100%;
-    padding: 0 13px !important;
+    padding: 15px 40px 15px 13px !important;
+    font-size: 13px!important;
+    color: $color-black!important;
+    letter-spacing: 0.02em;
+    line-height: unset!important;
+    text-transform: uppercase;
+    white-space: unset!important;
   }
 
   .select2-selection__placeholder {
     font-size: 13px;
     color: $color-grey;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-  }
-
-  .select2-selection__rendered {
-    font-size: 13px;
-    color: $color-black;
     letter-spacing: 0.02em;
     text-transform: uppercase;
   }
