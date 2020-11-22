@@ -8,41 +8,62 @@
           <form>
             <div class="form__item">
               <p class="form__title">МУЗЕЙ:</p>
+
+              <div class="form-select">
+                <select class="js-select visually-hidden" name="home-form-museums" data-placeholder="не выбрано">
+                  <option value="Государственный художественный музей">Государственный художественный музей</option>
+                  <option value="Галерея-мастерская художника Г.С.Райшева">Галерея-мастерская художника Г.С.Райшева</option>
+                  <option value="Дом-музей народного художника СССР В.А.Игошева">Дом-музей народного художника СССР В.А.Игошева</option>
+                </select>
+              </div>
             </div>
             <div class="form__item">
               <p class="form__title">ЗАЛЫ:</p>
-              <div class="home-form__columns">
-                <div class="home-form__checkboxes">
-                  {{>form/checkbox
-                      checked=1
-                      aria-label="1-й зал"
-                      label="1-й зал <b>50 руб</b>"
-                  }}
-                  {{>form/checkbox
-                      checked=1
-                      aria-label="2-й зал"
-                      label="2-й зал <b>50 руб</b>"
-                  }}
-                  {{>form/checkbox
-                      checked=1
-                      aria-label="3-й зал"
-                      label="3-й зал <b>50 руб</b>"
-                  }}
-                  {{>form/checkbox
-                      checked=1
-                      aria-label="4-й зал"
-                      label="4-й зал <b>50 руб</b>"
-                  }}
+              <div class="home-form__checkboxes">
+                <div class="home-form__checkboxes-columns">
+                  <div class="home-form__checkboxes-list">
+                    {{>form/checkbox
+                        checked=1
+                        aria-label="1-й зал"
+                        label="1-й зал <b>50 руб</b>"
+                    }}
+                    {{>form/checkbox
+                        checked=1
+                        aria-label="2-й зал"
+                        label="2-й зал <b>50 руб</b>"
+                    }}
+                    {{>form/checkbox
+                        checked=1
+                        aria-label="3-й зал"
+                        label="3-й зал <b>50 руб</b>"
+                    }}
+                    {{>form/checkbox
+                        checked=1
+                        aria-label="4-й зал"
+                        label="4-й зал <b>50 руб</b>"
+                    }}
+                  </div>
                 </div>
               </div>
             </div>
             <div class="form__item">
               <p class="form__title">ТИП БИЛЕТА:</p>
-
+              <div class="form-select">
+                <select class="js-select visually-hidden" name="home-form-museums" data-placeholder="не выбрано">
+                  <option value="стандартный" selected="selected">стандартный</option>
+                  <option value="льгота 50 %">льгота 50 %</option>
+                  <option value="льгота 100 %">льгота 100 %</option>
+                </select>
+              </div>
               <p><a class="primary-link primary-link--u" href="#">Подробнее о льготных категориях</a></p>
             </div>
             <div class="form__item">
               <p class="form__title">КОЛИЧЕСТВО:</p>
+              <div class="form-counter js-form-counter">
+                <button class="form-counter__btn js-form-counter__minus" type="button" aria-label="Убрать билет." disabled></button>
+                <input class="form-counter__input js-form-counter__input" type="number" min="1" max="1000" inputmode="numeric" aria-label="Введите необходимое количество билетов." value="1">
+                <button class="form-counter__btn js-form-counter__plus" type="button" aria-label="Добавить билет."></button>
+              </div>
             </div>
             <div class="form__item">
               <p class="form__title">E-MAIL:</p>
@@ -66,6 +87,19 @@
               </div>
             </div>
             <div class="form__item">
+              <div class="home-form__total">
+                <div class="home-form__total-amount">200 руб</div>
+                <div class="home-form__total-submit">
+                  {{>ui/btn button=1 label="оформить" type="submit"}}
+                </div>
+              </div>
+              <div class="home-form__total">
+                <div class="home-form__total-amount">200 руб</div>
+                <div class="home-form__total-submit">
+                  {{>ui/btn button=1 label="оформить" disabled=1 type="submit"}}
+                  <p class="home-form__total-message">Не выбран музей</p>
+                </div>
+              </div>
             </div>
           </form>
         </div>
@@ -73,21 +107,21 @@
       <div class="home-content__info">
         <h2>Информация о залах:</h2>
         <p>Государственный художественный музей</p>
-        <ul>
+        <ul class="halls-list">
           <li>Постоянная экспозиция «Русское искусство XVIII&nbsp;-&nbsp;XX&nbsp;веков»</li>
           <li>Постоянная экспозиция «Иконопись XV-XIX веков»</li>
           <li>Зал временных выставок №1 «Оливковый зал»</li>
           <li>Зал временных выставок №2 «Серый зал»</li>
         </ul>
         <p>Галерея-мастерская художника Г.С.Райшева</p>
-        <ul>
+        <ul class="halls-list">
           <li>Постоянная экспозиция «Человек. Природа. Космос.»</li>
           <li>Зал временных выставок. Конференц-зал</li>
           <li>Постоянная экспозиция «Геннадий Райшев. Ранняя живопись: прошлое, обращенное в будущее.»</li>
           <li>Постоянная экспозиция «Геннадий Райшев. Графика: поиски и эксперименты. 1960-е – 80-е годы»</li>
         </ul>
         <p>Дом-музей народного художника СССР В.А.Игошева</p>
-        <ul>
+        <ul class="halls-list">
           <li>Зал временных выставок «Творческая мастерская «У камина»</li>
           <li>Постоянная экспозиция «Северный путь»</li>
           <li>Постоянная экспозиция «Мастерская художника»</li>

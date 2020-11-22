@@ -1,17 +1,43 @@
 .home-form {
-  &__columns {
-    margin: -12.5px 0 -15px;
+  &__checkboxes-columns {
+    margin: -20px 0 -15px;
     padding: 0 0 25px 0;
     column-width: 200px;
   }
 
-  &__checkboxes {
+  &__checkboxes-list {
     padding: 25px 0 0;
     display: grid;
     grid-template-columns:  1fr;
-    //grid-auto-rows: 2rem;
     justify-content: flex-start;
     grid-gap: 25px;
-    box-decoration-break: clone;//grid-auto-flow: dense;
+    box-decoration-break: clone;
+  }
+
+  &__total {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+  }
+
+  &__total-amount {
+    height: 38px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+  }
+
+  &__total-submit {
+    margin-left: 40px;
+  }
+
+  &__total-message {
+    display: block;
+    margin: 15px 0 0;
+    color: $color-error;
+    line-height: 120%;
+    font-size: 14px;
+    letter-spacing: 0.02em;
   }
 }

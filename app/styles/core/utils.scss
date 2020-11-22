@@ -91,6 +91,10 @@
     color: $color-primary-hover;
   }
 
+  &:active {
+    color: $color-black;
+  }
+
   &--u {
     text-decoration: underline;
 

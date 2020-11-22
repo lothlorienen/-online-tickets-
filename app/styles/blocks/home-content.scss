@@ -48,10 +48,10 @@
       font-weight: 400;
       letter-spacing: 0.02em;
       line-height: 21px;
-      color: #5A061F;
+      color: $color-error;
     }
 
-    ul {
+    ul.halls-list {
       display: block;
       max-width: 485px;
       margin: 4px 0 0;
@@ -76,7 +76,5 @@
         display: block;
       }
     }
-
-
   }
 }

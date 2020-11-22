@@ -8,11 +8,13 @@ import 'html5shiv';
 // import 'lazysizes/plugins/native-loading/ls.native-loading';
 // import 'lazysizes/plugins/object-fit/ls.object-fit';
 import svgPolyfill from 'svg4everybody';
-// import jquery from 'jquery';
+import jquery from 'jquery';
+import select2 from 'select2';
 // import swiper from 'swiper';
 
-// window.$ = window.jQuery = jquery;
+window.$ = window.jQuery = jquery;
 window.svg4everybody = svgPolyfill;
+window.select2 = select2;
 // window.Swiper = swiper;
 
 // lazySizes.cfg.lazyClass = 'lazy';
