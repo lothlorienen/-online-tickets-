@@ -1,0 +1,16 @@
+<section class="success-page">
+  <div class="container-md">
+    <div class="success-page__container">
+      <h1 class="success-page__title">БИЛЕТ ОФОРМЛЕН</h1>
+      <div class="success-page__actions">
+        <a class="action-btn" href="#" aria-label="Скачать билет." download>
+          {{>ui/svg name="download"}} Скачать</a>
+        <button class="action-btn" type="button" onclick="printJS('путь_к_pdf_файлу')" aria-label="Напечатать билет.">
+          {{>ui/svg name="print"}} Печатать</button>
+      </div>
+      <div class="success-page__image">
+        <img src="../assets/images/common/pdf.png" alt="Изображение билета." title="Ваш билет">
+      </div>
+    </div>
+  </div>
+</section>
