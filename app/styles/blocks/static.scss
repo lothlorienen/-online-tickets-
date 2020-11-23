@@ -1,11 +1,11 @@
-.static {
+.tickets-static {
   > * {
     :first-child {
-      margin-top: 0;
+      margin-top: 0 !important;
     }
 
     :last-child {
-      margin-bottom: 0;
+      margin-bottom: 0 !important;
     }
   }
 
@@ -96,6 +96,147 @@
       content: '-';
       display: inline-block;
       margin-right: 5px;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.static {
+  > *:first-child {
+    margin-top: 0!important;
+  }
+
+  > *:last-child {
+    margin-bottom: 0!important;
+  }
+
+  > * + * {
+    margin-top: 40px;
+
+    @include media(mobile) {
+      margin-top: 24px;
+    }
+  }
+
+  h2 {
+    display: block;
+    margin: 70px 0 0;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: $color-primary;
+
+    @include media(mobile) {
+      margin-top: 40px;
+    }
+
+    + p {
+      margin-top: 20px;
+
+      @include media(mobile) {
+        margin-top: 15px;
+      }
+    }
+
+    + ul {
+      margin-top: 22px;
+
+      @include media(mobile) {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  p {
+    display: block;
+    margin: 62px 0 0;
+    padding-left: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    line-height: 21px;
+
+    @include media(mobile) {
+      margin-top: 30px;
+      padding-left: 15px;
+      font-size: 14px;
+    }
+
+    + ul.halls-list {
+      margin-top: 4px;
+    }
+  }
+
+  ul.halls-list {
+    display: block;
+    max-width: 485px;
+    margin: 25px 0 0;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    line-height: 133%;
+    list-style-type: none;
+    counter-reset: li-counter;
+
+    @include media(mobile) {
+      font-size: 14px;
+    }
+
+    li {
+      position: relative;
+      padding-left: 78px;
+
+      @include media(mobile) {
+        padding-left: 69px;
+      }
+    }
+
+    li::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: 'Зал № ' counter(li-counter) ' - ';
+      counter-increment: li-counter;
+      display: block;
+    }
+  }
+
+  ul {
+    margin: 25px 0 0;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    line-height: 133%;
+    list-style-type: none;
+
+    @include media(mobile) {
+      margin-top: 20px;
+    }
+
+    @include media(mobile) {
+      font-size: 14px;
+    }
+
+    li::before {
+      content: '-';
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+
+  a {
+    display: inline-block;
+    line-height: 140%;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    text-decoration: underline;
+
+    &:hover {
+      color: $color-primary;
     }
   }
 }

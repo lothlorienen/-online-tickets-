@@ -108,3 +108,11 @@
     }
   }
 }
+
+.error-text {
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  color: $color-error;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
