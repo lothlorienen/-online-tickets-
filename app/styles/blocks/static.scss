@@ -1,0 +1,101 @@
+.static {
+  > * {
+    :first-child {
+      margin-top: 0;
+    }
+
+    :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  h2 {
+    display: block;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+
+    + p {
+      margin-top: 42px;
+
+      @include media(mobile) {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  p {
+    display: block;
+    margin: 62px 0 0;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    line-height: 21px;
+    color: $color-error;
+
+    @include media(mobile) {
+      margin-top: 30px;
+      font-size: 14px;
+    }
+
+    + ul.halls-list {
+      margin-top: 4px;
+    }
+  }
+
+  ul.halls-list {
+    display: block;
+    max-width: 485px;
+    margin: 25px 0 0;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    line-height: 133%;
+    list-style-type: none;
+    counter-reset: li-counter;
+
+    @include media(mobile) {
+      font-size: 14px;
+    }
+
+    li {
+      position: relative;
+      padding-left: 78px;
+
+      @include media(mobile) {
+        padding-left: 69px;
+      }
+    }
+
+    li::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: 'Зал № ' counter(li-counter) ' - ';
+      counter-increment: li-counter;
+      display: block;
+    }
+  }
+
+  ul {
+    max-width: 485px;
+    margin: 25px 0 0;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    line-height: 133%;
+    list-style-type: none;
+
+    @include media(mobile) {
+      font-size: 14px;
+    }
+
+    li::before {
+      content: '-';
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+}

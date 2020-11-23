@@ -19,6 +19,7 @@ import './src/widgets/form-counter';
 import './src/widgets/header';
 import './src/widgets/header-menu';
 import './src/widgets/header-scroll';
+import './src/widgets/tickets';
 
 import './src/app';
 

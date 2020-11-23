@@ -24,6 +24,7 @@ class HeaderMenu extends Widget {
 
   showMenu(elem) {
     this.$links.classList.add('active');
+    document.body.classList.add('header-fixed');
     HeaderMenu.expand(elem);
     hideScrollbar();
   }
@@ -31,6 +32,7 @@ class HeaderMenu extends Widget {
   hideMenu(elem) {
     HeaderMenu.collapse(elem);
     this.$links.classList.remove('active');
+    document.body.classList.remove('header-fixed');
     showScrollbar();
   }
 

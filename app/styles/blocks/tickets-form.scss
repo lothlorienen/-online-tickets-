@@ -18,11 +18,15 @@
 
   &__total {
     display: flex;
-    justify-content: flex-end;
     padding-top: 10px;
+
+    @include media(mobile, up) {
+      justify-content: flex-end;
+    }
   }
 
   &__total-amount {
+    flex: 0 0 max-content;
     height: 38px;
     font-size: 24px;
     font-weight: 500;
@@ -31,7 +35,21 @@
   }
 
   &__total-submit {
+    flex: 1 1 auto;
     margin-left: 40px;
+
+    @include media(mobileSmall) {
+      margin-left: 20px;
+    }
+
+    .btn {
+      @include media(mobileSmall) {
+        max-width: 180px;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
   }
 
   &__total-message {

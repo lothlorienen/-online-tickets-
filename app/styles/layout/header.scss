@@ -166,7 +166,7 @@
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
   }
 
-  .fixed-scroll &:not(.header--scroll) {
+  .header-fixed &:not(.header--scroll) {
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
   }
 }
@@ -190,11 +190,11 @@
     @include transition;
   }
 
-  .fixed-scroll &::after {
+  .header-fixed &::after {
     transform: translateY(-1px)  rotate(45deg);
   }
 
-  .fixed-scroll &::before {
+  .header-fixed &::before {
     transform: translateY(1px) rotate(-45deg);
   }
 
@@ -207,14 +207,14 @@
     border-radius: 5px;
     @include transition;
 
-    .fixed-scroll & {
+    .header-fixed & {
       margin: 0;
       height: 0;
     }
   }
 }
 
-.fixed-scroll {
+.header-fixed {
   &::before {
     position: fixed;
     bottom: 0;

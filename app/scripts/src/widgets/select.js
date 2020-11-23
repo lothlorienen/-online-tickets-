@@ -22,10 +22,10 @@ class Select extends Widget {
       minimumResultsForSearch: -1,
     });
 
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-      $(this.$node).select2('destroy');
-      $(this.$node).removeClass('visually-hidden');
-    }
+    // if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    //   $(this.$node).select2('destroy');
+    //   $(this.$node).removeClass('visually-hidden');
+    // }
 
     // $(this.$node).on('change', this.onChange);
 
