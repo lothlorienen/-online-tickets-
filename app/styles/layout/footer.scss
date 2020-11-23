@@ -4,9 +4,16 @@
 
   &__container {
     @extend .container;
-    display: flex;
     padding-top: 40px;
-    padding-bottom: 50px;
+
+    @include media(mobile, up) {
+      display: flex;
+      padding-bottom: 50px;
+    }
+
+    @include media(mobile) {
+      padding-bottom: 30px;
+    }
   }
 
   &__info {
@@ -41,6 +48,10 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
 
+    @include media(mobile) {
+      margin-top: 55px;
+    }
+
     ul {
       > * + * {
         margin-top: 23px;
@@ -48,7 +59,9 @@
     }
 
     li {
-      text-align: right;
+      @include media(mobile, up) {
+        text-align: right;
+      }
     }
   }
 
