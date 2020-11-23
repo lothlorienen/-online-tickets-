@@ -9,7 +9,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Дополнительные услуги</title>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/main.css?v=2977">
+  <link rel="stylesheet" href="../css/main.css?v=3725">
 </head>
 
 <body class="page">
@@ -56,7 +56,7 @@
 
 <section class="tickets-content">
   <div class="container-md">
-    <div class="tickets-content__grid">
+    <div class="tickets-content__grid js-tickets">
       <div class="tickets-content__form">
         <h1 class="page-title">Дополнительные услуги</h1>
 
@@ -112,19 +112,25 @@
           </form>
         </div>
       </div>
-      <div class="tickets-content__info">
-        <h2>Информация об услугах:</h2>
-        <p>Эти услуги вы сможете заказать только после устной консультации со специалистом по
-          телефону 8 3467 33-08-68:</p>
-        <ul>
-          <li>Экскурсионное обслуживание - 250 р.</li>
-          <li>Культурно-образовательное мероприятие "Музейное занятие для организованных групп детей" - 50 р.</li>
-          <li>Культурно-образовательное мероприятие «Творческий мастер-класс» - 300 р.</li>
-          <li>Культурно-образовательное мероприятие «Художественный мастер-класс» - 300 р.</li>
-          <li>Культурно-образовательное мероприятие «Мастер-класс «Тематический No1» - 150 р.</li>
-          <li>Культурно-образовательное мероприятие «Мастер-класс «Тематический No2» - 100 р.</li>
-        </ul>
+      <div class="tickets-content__info js-tickets__mobile-content">
+        <div class="tickets-content__scroll">
+          <div class="static">
+            <h2>Информация об услугах:</h2>
+            <p>Эти услуги вы сможете заказать только после устной консультации со специалистом по
+              телефону 8 3467 33-08-68:</p>
+            <ul>
+              <li>Экскурсионное обслуживание - 250 р.</li>
+              <li>Культурно-образовательное мероприятие "Музейное занятие для организованных групп детей" - 50 р.</li>
+              <li>Культурно-образовательное мероприятие «Творческий мастер-класс» - 300 р.</li>
+              <li>Культурно-образовательное мероприятие «Художественный мастер-класс» - 300 р.</li>
+              <li>Культурно-образовательное мероприятие «Мастер-класс «Тематический No1» - 150 р.</li>
+              <li>Культурно-образовательное мероприятие «Мастер-класс «Тематический No2» - 100 р.</li>
+            </ul>
+          </div>
+        </div>
+        <button class="tickets-content__mobile-close js-tickets__mobile-close"></button>
       </div>
+      <button class="tickets-content__mobile-open js-tickets__mobile-open" type="button">i</button>
     </div>
   </div>
 </section>
@@ -167,7 +173,7 @@
 
 </div>
 
-<script src="../scripts/vendors.js?v=2977" defer></script>
-  <script src="../scripts/main.js?v=2977" defer></script>
+<script src="../scripts/vendors.js?v=3725" defer></script>
+  <script src="../scripts/main.js?v=3725" defer></script>
 </body>
 </html>
