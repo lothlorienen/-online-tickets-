@@ -1,6 +1,10 @@
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100vw;
   z-index: z(header);
   background-color: $color-white;
   @include transition;
@@ -9,7 +13,10 @@
     @extend .container;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     min-height: 80px;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 
   &__brand {
@@ -21,8 +28,12 @@
       letter-spacing: 0.02em;
       line-height: 28px;
 
+      @include media(mobile) {
+        font-size: 20px;
+      }
+
       &:hover {
-       opacity: 0.75;
+        opacity: 0.75;
       }
     }
 
@@ -30,26 +41,64 @@
       margin-right: 29px;
       height: 20px;
       width: 10px;
+
+      @include media(mobile) {
+        margin-right: 20px;
+      }
     }
   }
 
   &__links {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
+    @include media(tabletSmall, up) {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
 
-    > * + * {
-      margin-left: 40px;
+      > * + * {
+        margin-left: 40px;
+      }
+    }
+
+    @include media(tabletSmall) {
+      display: none;
+      flex: 1 1 100%;
+      order: 1;
+
+      &.active {
+        display: block;
+      }
+
+      &.animate {
+        position: relative;
+        display: block;
+        height: 0;
+        overflow: hidden;
+        transition: height .32s ease;
+      }
     }
   }
 
   &__nav {
-    ul {
-      display: flex;
-      align-items: center;
+    @include media(tabletSmall) {
+      padding: 20px 0;
+    }
 
-      > * + * {
-        margin-left: 40px;
+    ul {
+      @include media(tabletSmall, up) {
+        display: flex;
+        align-items: center;
+
+        > * + * {
+          margin-left: 40px;
+        }
+      }
+
+      @include media(tabletSmall) {
+        text-align: right;
+
+        > * + * {
+          margin-top: 20px;
+        }
       }
     }
 
@@ -70,6 +119,11 @@
           color: $color-primary-hover;
         }
       }
+
+      @include media(tabletSmall) {
+        display: inline-block;
+        line-height: 40px;
+      }
     }
   }
 
@@ -82,15 +136,94 @@
 
     a {
       display: flex;
-      align-items: flex-end;
 
       &:hover {
         color: $color-primary;
       }
+
+      @include media(tabletSmall, up) {
+        align-items: flex-end;
+      }
+
+      @include media(tabletSmall) {
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  &__mobile-menu {
+    @include media(tabletSmall, up) {
+      display: none;
+    }
+
+    @include media(tabletSmall) {
+      display: block;
+      margin-left: auto;
     }
   }
 
   &--scroll {
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  .fixed-scroll &:not(.header--scroll) {
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.mobile-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 25px;
+  height: 25px;
+
+  &::after,
+  &::before {
+    content: '';
+    display: block;
+    background-color: currentColor;
+    width: 100%;
+    height: 2px;
+    border-radius: 5px;
+    @include transition;
+  }
+
+  .fixed-scroll &::after {
+    transform: translateY(-1px)  rotate(45deg);
+  }
+
+  .fixed-scroll &::before {
+    transform: translateY(1px) rotate(-45deg);
+  }
+
+  &__icon {
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin: 5px 0;
+    background-color: currentColor;
+    border-radius: 5px;
+    @include transition;
+
+    .fixed-scroll & {
+      margin: 0;
+      height: 0;
+    }
+  }
+}
+
+.fixed-scroll {
+  &::before {
+    position: fixed;
+    bottom: 0;
+    z-index: z(header) - 1;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#000, 0.25);
+    @include transition;
   }
 }

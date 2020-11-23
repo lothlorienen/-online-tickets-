@@ -3,7 +3,7 @@
     <div class="header__brand">
       <a href="#">{{>ui/svg name="rightBig"}} Онлайн касса</a>
     </div>
-    <div class="header__links">
+    <div class="header__links js-header__links">
       <nav class="header__nav">
         <ul>
           <li><a href="./home.html" {{#ifCond page 'home'}}class="active"{{/ifCond}}>БИЛЕТЫ</a></li>
@@ -19,6 +19,11 @@
           </li>
         </ul>
       </div>
+    </div>
+    <div class="header__mobile-menu">
+      <button class="mobile-menu js-header__menu-btn" type="button" aria-label="Открыть мобильное меню.">
+        <i class="mobile-menu__icon"></i>
+      </button>
     </div>
   </div>
 </header>
