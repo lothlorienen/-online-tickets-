@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Льготные категории</title>
+  <title>Успешная отправка</title>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/main.css?v=1030">
 </head>
@@ -54,44 +54,24 @@
 
 <main class="page__content">
 
-<section class="inner-page">
+<section class="success-page">
   <div class="container-md">
-    <div class="inner-page__container">
-      <p class="inner-page__attention error-text">Внимание! Льгота предоставляется только при предъявления документа
-        подтверждающего право на льготное посещение.</p>
-      <div class="inner-page__content">
-        <div class="static">
-          <h2>Предоставление льготы 50%:</h2>
-          <ul>
-            <li>Лица, не достигшие восемнадцати лет (входной билет, экскурсионное обслуживание);</li>
-            <li>Члены многодетных семей (входной билет, экскурсионное обслуживание);</li>
-            <li>Пенсионеры (входной билет);</li>
-            <li>Лица, обучающиеся по основным профессиональным образовательным программам (экскурсионное обслуживание).
-            </li>
-          </ul>
-          <h2>Предоставление льготы 100%:</h2>
-          <ul>
-            <li>Лица, не достигшие шестнадцати лет (входной билет);</li>
-            <li>Лица, не достигшие восемнадцати лет (входной билет). Льгота предоставляется 1 раз в месяц;</li>
-            <li>Члены многодетных семей (входной билет, экскурсионное обслуживание). Льгота предоставляется 1 раз в
-              месяц;
-            </li>
-            <li>Инвалиды;</li>
-            <li>Лица, обучающиеся по основным профессиональным образовательным программам (входной билет, экскурсионное
-              обслуживание). Льгота предоставляется 1 раз в месяц;
-            </li>
-            <li>Военнослужащие, проходящие военную службу по призыву (входной билет, экскурсионное обслуживание);</li>
-            <li>Граждане России, удостоенные званий Героя Советского Союза, Героя Российской Федерации и являющиеся
-              полными кавалерами ордена Славы (входной билет, экскурсионное обслуживание);
-            </li>
-            <li>Граждане Российской Федерации, удостоенные звания Героя Социалистического Труда или Героя Труда
-              Российской
-              Федерации, и граждане Российской Федерации, награжденные орденом Трудовой Славы трех степеней (входной
-              билет, экскурсионное обслуживание).
-            </li>
-          </ul>
-          <a href="#">Ссылка</a>
-        </div>
+    <div class="success-page__container">
+      <h1 class="success-page__title">БИЛЕТ ОФОРМЛЕН</h1>
+      <div class="success-page__actions">
+        <a class="action-btn" href="#" aria-label="Скачать билет." download>
+          <svg class="icon icon--download">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#download"/>
+</svg>
+ Скачать</a>
+        <button class="action-btn" type="button" onclick="printJS('путь_к_pdf_файлу')" aria-label="Напечатать билет.">
+          <svg class="icon icon--print">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#print"/>
+</svg>
+ Печатать</button>
+      </div>
+      <div class="success-page__image">
+        <img src="../assets/images/common/pdf.png" alt="Изображение билета." title="Ваш билет">
       </div>
     </div>
   </div>
