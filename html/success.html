@@ -9,7 +9,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Успешная отправка</title>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/main.css?v=2548">
+  <link rel="stylesheet" href="../css/main.css?v=4083">
 </head>
 
 <body class="page">
@@ -59,16 +59,12 @@
     <div class="success-page__container">
       <h1 class="success-page__title">БИЛЕТ ОФОРМЛЕН</h1>
       <div class="success-page__actions">
-        <a class="action-btn" href="#" aria-label="Скачать билет." download>
-          <svg class="icon icon--download">
-    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#download"/>
-</svg>
- Скачать</a>
-        <button class="action-btn" type="button" onclick="printJS('путь_к_pdf_файлу')" aria-label="Напечатать билет.">
-          <svg class="icon icon--print">
-    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#print"/>
-</svg>
- Печатать</button>
+        <a class="action-btn action-btn--download" href="#" aria-label="Скачать билет." disabled download></a>
+        <button class="action-btn action-btn--print" type="button" onclick="printJS('путь_к_pdf_файлу')" aria-label="Напечатать билет." disabled></button>
+      </div>
+      <div class="success-page__actions">
+        <a class="action-btn action-btn--download" href="#" aria-label="Скачать билет." download></a>
+        <button class="action-btn action-btn--print" type="button" onclick="printJS('путь_к_pdf_файлу')" aria-label="Напечатать билет."></button>
       </div>
       <div class="success-page__image">
         <img src="../assets/images/common/pdf.png" alt="Изображение билета." title="Ваш билет">
@@ -115,7 +111,7 @@
 
 </div>
 
-<script src="../scripts/vendors.js?v=2548" defer></script>
-  <script src="../scripts/main.js?v=2548" defer></script>
+<script src="../scripts/vendors.js?v=4083" defer></script>
+  <script src="../scripts/main.js?v=4083" defer></script>
 </body>
 </html>
