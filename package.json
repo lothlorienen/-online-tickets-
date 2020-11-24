@@ -58,14 +58,11 @@
     "html5shiv": "^3.7.3",
     "intersection-observer": "^0.7.0",
     "jquery": "^3.3.1",
-    "lazysizes": "^5.2.0-beta1",
     "normalize-scss": "^7.0.1",
     "picturefill": "^3.0.3",
     "print-js": "^1.5.0",
-    "react-app-polyfill": "^1.0.5",
     "select2": "^4.0.13",
-    "svg4everybody": "^2.1.9",
-    "swiper": "^6.3.2"
+    "svg4everybody": "^2.1.9"
   },
   "browserslist": [
     ">0.25%",

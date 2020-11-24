@@ -1,0 +1,25 @@
+.select2-dropdown {
+  padding-bottom: 10px;
+  border-color: $color-black;
+  border-radius: unset;
+}
+
+.select2-results__option {
+  padding: 14px 43px 14px 13px;
+  font-size: 14px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+
+  &:active {
+    font-weight: 500;
+  }
+
+  &[aria-selected=true] {
+    background-color: #F9F6F3 !important;
+  }
+
+  &--highlighted[aria-selected] {
+    background-color: #F9F6F3 !important;
+    color: initial !important;
+  }
+}

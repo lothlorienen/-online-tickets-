@@ -1,8 +1,8 @@
-import 'react-app-polyfill/stable';
-import 'react-app-polyfill/ie11';
+// import 'react-app-polyfill/stable';
+// import 'react-app-polyfill/ie11';
 import 'intersection-observer';
 import './polyfills';
-import 'html5shiv';
+// import 'html5shiv';
 import svgPolyfill from 'svg4everybody';
 import jquery from 'jquery';
 import select2 from 'select2';
