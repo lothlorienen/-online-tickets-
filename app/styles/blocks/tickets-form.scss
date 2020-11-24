@@ -17,11 +17,21 @@
   }
 
   &__total {
-    display: flex;
+    display: grid;
+    grid-template-columns: max-content min-content;
+    gap: 40px;
     padding-top: 10px;
+
+    @include media(mobileSmall) {
+      gap: 20px;
+    }
 
     @include media(mobile, up) {
       justify-content: flex-end;
+    }
+
+    @include media(mobile) {
+      grid-template-columns: max-content auto;
     }
   }
 
@@ -35,16 +45,11 @@
   }
 
   &__total-submit {
-    flex: 1 1 auto;
-    margin-left: 40px;
-
-    @include media(mobileSmall) {
-      margin-left: 20px;
-    }
+    width: 100%;
 
     .btn {
       @include media(tabletSmall) {
-        max-width: 180px;
+        //max-width: 180px;
         width: 100%;
         padding-left: 15px;
         padding-right: 15px;
