@@ -3,10 +3,9 @@
     <div class="success-page__container">
       <h1 class="success-page__title">БИЛЕТ ОФОРМЛЕН</h1>
       <div class="success-page__actions">
-        <a class="action-btn" href="#" aria-label="Скачать билет." download>
-          {{>ui/svg name="download"}} Скачать</a>
-        <button class="action-btn" type="button" onclick="printJS('путь_к_pdf_файлу')" aria-label="Напечатать билет.">
-          {{>ui/svg name="print"}} Печатать</button>
+        <a class="action-btn action-btn--download" href="#" aria-label="Скачать билет." disabled download></a>
+        <button class="action-btn action-btn--print" type="button" onclick="printJS('путь_к_pdf_файлу')"
+                aria-label="Напечатать билет." disabled></button>
       </div>
       <div class="success-page__image">
         <img src="../assets/images/common/pdf.png" alt="Изображение билета." title="Ваш билет">

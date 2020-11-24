@@ -1,17 +1,96 @@
 .action-btn {
+  position: relative;
   display: inline-flex;
   align-items: center;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.02em;
   line-height: 150%;
-  @include transition;
+  transition: font-weight 300ms linear;
 
   &:hover {
-    color: $color-primary;
+    font-weight: 500;
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  &::after,
+  &::before {
+    content: '';
+    display: inline-block;
+    margin-right: 11px;
+    transform: scale(0.9);
+    transition: opacity 250ms ;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
   }
 
   svg {
     margin-right: 10px;
+  }
+
+  &--print {
+    &::before {
+      @include sprite('print');
+      opacity: 1;
+    }
+
+    &::after {
+      @include sprite('print-h');
+      opacity: 0;
+    }
+
+    &:hover {
+      &::before {
+       opacity: 0;
+      }
+
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    &[disabled] {
+      &::before {
+        @include sprite('print-d');
+      }
+    }
+  }
+
+  &--download {
+    &::before {
+      @include sprite('download');
+      opacity: 1;
+    }
+
+    &::after {
+      @include sprite('download-h');
+      opacity: 0;
+    }
+
+    &:hover {
+      &::before {
+        opacity: 0;
+      }
+
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    &[disabled] {
+      &::before {
+        @include sprite('download-d');
+      }
+    }
   }
 }
