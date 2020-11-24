@@ -13,13 +13,13 @@
   }
 
   &__form {
-    @include media(tabletSmall, up) {
-      padding-right: 90px;
-    }
-
     @include media(mobile, up) {
       padding-right: 60px;
       border-right: 1px solid transparentize(black, 0.5);
+    }
+
+    @include media(tabletSmall, up) {
+      padding-right: 90px;
     }
 
     .page-title {

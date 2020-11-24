@@ -19,19 +19,16 @@
   &__total {
     display: grid;
     grid-template-columns: max-content min-content;
+    justify-content: flex-end;
     gap: 40px;
     padding-top: 10px;
 
+    @include media(tabletSmall) {
+      grid-template-columns: max-content minmax(auto, 175px);
+    }
+
     @include media(mobileSmall) {
       gap: 20px;
-    }
-
-    @include media(mobile, up) {
-      justify-content: flex-end;
-    }
-
-    @include media(mobile) {
-      grid-template-columns: max-content auto;
     }
   }
 
@@ -42,6 +39,10 @@
     font-weight: 500;
     line-height: 150%;
     letter-spacing: 0.02em;
+
+    @include media(tabletSmall) {
+      font-size: 22px;
+    }
   }
 
   &__total-submit {
