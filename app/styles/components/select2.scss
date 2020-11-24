@@ -23,3 +23,16 @@
     color: initial !important;
   }
 }
+.select2-container--focus .select2-selection {
+  &:hover {
+    border-color: initial;
+  }
+}
+
+.select2-selection {
+  @include transition(border-color);
+
+  &:hover {
+    border-color: $color-grey;
+  }
+}

@@ -41,6 +41,13 @@
       height: 45px;
       padding: 0 13px;
       border: 1px solid $color-black;
+      @include transition;
+      cursor: pointer;
+
+      &:hover {
+        border-color: $color-grey;
+        background-color: transparent;
+      }
 
       &:focus {
         border-color: $color-primary;
