@@ -6,7 +6,6 @@
   font-weight: 400;
   letter-spacing: 0.02em;
   line-height: 150%;
-  transition: font-weight 300ms linear;
 
   &:hover {
     font-weight: 500;
@@ -23,7 +22,7 @@
     display: inline-block;
     margin-right: 11px;
     transform: scale(0.9);
-    transition: opacity 250ms ;
+    transition: opacity 100ms ;
   }
 
   &::after {
