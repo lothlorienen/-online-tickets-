@@ -86,6 +86,7 @@
     height: 25px;
     border-radius: 50%;
     border: 1px solid currentColor;
+    @include transition;
 
     @include media(mobile, up) {
       display: none;
@@ -96,7 +97,8 @@
     }
 
     &:hover {
-      color: $color-grey;
+      font-weight: 500;
+      border-width: 2px;
     }
   }
 
