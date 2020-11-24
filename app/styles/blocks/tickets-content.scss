@@ -13,8 +13,12 @@
   }
 
   &__form {
-    @include media(mobile, up) {
+    @include media(tabletSmall, up) {
       padding-right: 90px;
+    }
+
+    @include media(mobile, up) {
+      padding-right: 60px;
       border-right: 1px solid transparentize(black, 0.5);
     }
 
@@ -30,9 +34,14 @@
   }
 
   &__info {
-    @include media(mobile, up) {
+    @include media(tabletSmall, up) {
       padding-top: 18px;
       padding-left: 85px;
+    }
+
+    @include media(mobile, up) {
+      padding-top: 18px;
+      padding-left: 55px;
     }
 
     @include media(mobile) {
@@ -72,6 +81,14 @@
     border-radius: 50%;
     border: 1px solid currentColor;
 
+    @include media(mobile, up) {
+      display: none;
+    }
+
+    @include media(mobileSmall) {
+      top: 23px;
+    }
+
     &:hover {
       color: $color-grey;
     }
@@ -88,6 +105,10 @@
     flex-direction: column;
     width: 20px;
     height: 20px;
+
+    @include media(mobile, up) {
+      display: none;
+    }
 
     &::after,
     &::before {

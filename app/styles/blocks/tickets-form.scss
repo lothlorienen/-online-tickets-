@@ -43,7 +43,7 @@
     }
 
     .btn {
-      @include media(mobileSmall) {
+      @include media(tabletSmall) {
         max-width: 180px;
         width: 100%;
         padding-left: 15px;
