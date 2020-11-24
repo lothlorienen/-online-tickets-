@@ -80,7 +80,7 @@
 
   &__nav {
     @include media(tabletSmall) {
-      padding: 20px 0;
+      padding: 40px 0 14px;
     }
 
     ul {
@@ -94,11 +94,8 @@
       }
 
       @include media(tabletSmall) {
-        text-align: right;
-
-        > * + * {
-          margin-top: 20px;
-        }
+        margin: 0;
+        padding: 0 5px;
       }
     }
 
@@ -121,13 +118,17 @@
       }
 
       @include media(tabletSmall) {
-        display: inline-block;
+        display: block;
         line-height: 40px;
       }
     }
   }
 
   &__actions {
+    @include media(tabletSmall) {
+      display: none;
+    }
+
     svg {
       width: 31px;
       height: 21px;
