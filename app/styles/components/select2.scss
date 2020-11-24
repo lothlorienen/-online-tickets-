@@ -1,4 +1,5 @@
 .select2-dropdown {
+  z-index: z(header) - 1;
   padding-bottom: 10px;
   border-color: $color-black;
   border-radius: unset;

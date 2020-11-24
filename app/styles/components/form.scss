@@ -386,6 +386,7 @@
       height: 8px!important;
       @include sprite('down');
       border: unset!important;
+      @include transition(transform, 350ms, ease);
     }
   }
   .select2-container--open .select2-selection__arrow b {
