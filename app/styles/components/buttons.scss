@@ -27,7 +27,7 @@
   //  outline: 1px solid $color-primary-hover;
   //}
 
-  &:disabled,
+  &[disabled],
   &--disabled {
     color: $color-grey;
     pointer-events: none;
